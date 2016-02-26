@@ -27,6 +27,8 @@ $app->view->parserExtensions = array(new \Slim\Views\TwigExtension());
 
 // Define routes
 $app->get('/', function () use ($app) {
+    echo "<pre>";
+	print_r($app); exit;
     // Sample log message
     $app->log->info("Slim-Skeleton '/' route");
     // Render index view
